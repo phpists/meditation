@@ -1009,6 +1009,285 @@ header.header .header__bottom h1.products__title::after {
   display: none;
 }
 
+.is_page .tabs-section__description {
+  padding-top: 24px;
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.is_page .tabs-section__description p:not(:first-child) {
+  margin-bottom: 27px;
+}
+
+.is_page .tabs-section__description p.li {
+  position: relative;
+}
+
+.is_page .tabs-section__description p.li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  left: calc(50% - 3px);
+  top: -15px;
+  border-radius: 50%;
+  background-color: #B29972;
+}
+
+.tabs-section__menu {
+  position: relative;
+}
+
+.tabs-section__menu .back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: calc(50% - 9px);
+  width: 56px;
+  height: 18px;
+}
+
+.tabs-section__menu .back:after {
+  display: none;
+}
+
+.tabs-section__menu .back img {
+  margin-right: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.banner {
+  padding: 0;
+}
+
+.banner__wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background: #212C4C;
+  -webkit-box-shadow: 0px 18.3398px 45.8495px rgba(48, 61, 99, 0.22);
+          box-shadow: 0px 18.3398px 45.8495px rgba(48, 61, 99, 0.22);
+  border-radius: 18.3398px;
+  color: white;
+  padding: 18px;
+}
+
+.banner__inner {
+  border: 1px solid transparent;
+  background-color: #212C4C;
+  background-clip: padding-box;
+  position: relative;
+  border-radius: 10px;
+  padding: 47px 60px 33px;
+  z-index: 1;
+  text-align: center;
+}
+
+.banner__inner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  margin: -1px;
+  border-radius: inherit;
+  background: -webkit-gradient(linear, left top, right top, from(#dfb97d), color-stop(#dfb97d), color-stop(#caa46f), color-stop(#b49061), color-stop(#b49061), color-stop(#caa46f), color-stop(#dfb97d), to(#dfb97d));
+  background: -webkit-linear-gradient(left, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d);
+  background: -o-linear-gradient(left, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d);
+  background: linear-gradient(90deg, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d);
+}
+
+.banner__inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: 0px;
+  border-radius: inherit;
+  background: #212C4C;
+}
+
+.banner__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.banner__text {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 144.5%;
+  font-weight: normal;
+}
+
+.banner__link {
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 144.5%;
+  cursor: pointer;
+  color: #B38A4C !important;
+}
+
+.shop__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  padding-top: 45px;
+  margin: -15px;
+}
+
+.shop__item {
+  -webkit-box-flex: calc(25% - 30px);
+      -ms-flex: calc(25% - 30px) 0 1;
+          flex: calc(25% - 30px) 0 1;
+  max-width: calc(25% - 30px);
+  list-style: none;
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  position: relative;
+  max-height: 430px;
+  border: 1px solid #F7F6ED;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.shop__item:hover .shop__button {
+  bottom: -80px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.shop__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 168px;
+  margin-bottom: 37px;
+  margin-top: 20px;
+}
+
+.shop__img img {
+  display: block;
+  width: 168px;
+  height: 168px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.shop__descr {
+  font-size: 14px;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.shop__price {
+  color: #B38A4C;
+  font-size: 18px;
+  line-height: 154.19%;
+}
+
+.shop__button {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  padding: 33px 0 18px;
+  z-index: -1;
+  max-height: 111px;
+  bottom: 0px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0;
+  border-radius: 10px;
+  border: 1px solid #F7F6ED;
+  border-top: none;
+  background-color: #fff;
+}
+
+.shop__button .button {
+  margin-top: 0 !important;
+}
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 22px;
+}
+
+.breadcrumbs__item {
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumbs__item a {
+  color: #D0CEB7;
+  font-size: 12px;
+  line-height: 130%;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.breadcrumbs__item a:hover {
+  color: #B29972;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #D0CEB7;
+}
+
 @media (max-width: 1199.98px) {
   .product-card__item--big-item .product-card__img {
     -webkit-box-flex: 50%;
