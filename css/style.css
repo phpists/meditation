@@ -587,15 +587,24 @@ a.button span.first-span span {
 
 .news__title {
   text-align: left;
-  margin-bottom: 12px;
+}
+
+.news__title a {
+  font-weight: bold;
+}
+
+.news__title a:hover {
+  color: inherit;
 }
 
 .news__descr {
+  line-height: 150%;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  margin-bottom: 20px;
+  height: auto;
+  margin-top: -6px;
 }
 
 .news__link {

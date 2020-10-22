@@ -8670,7 +8670,7 @@ body {
 
 a {
     color: #B38A4C;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -8703,10 +8703,11 @@ a:disabled {
     text-decoration: none;
 }
 
-a:visited {
+
+/* a:visited {
     color: #212C4C;
     text-decoration: none;
-}
+} */
 
 .button,
 a.button {

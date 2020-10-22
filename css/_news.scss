@@ -46,14 +46,23 @@
     }
     &__title {
         text-align: left;
-        margin-bottom: 12px;
+        // margin-bottom: 12px;
+        a {
+            font-weight: bold;
+            &:hover {
+                color: inherit;
+            }
+        }
     }
     &__descr {
+        line-height: 150%;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        margin-bottom: 20px;
+        height: auto;
+        margin-top: -6px;
+        // margin-bottom: 20px;
     }
     &__link {
         align-self: flex-end;
