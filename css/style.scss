@@ -338,6 +338,91 @@ header.header {
     }
 }
 
+.book {
+    &__inner {
+        background-clip: padding-box;
+        border: solid 1px transparent;
+        background-color: white;
+        position: relative;
+        padding: 90px 105px 90px 70px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            margin: -2px;
+            border-radius: inherit;
+            background: linear-gradient(90deg, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d)
+        }
+    }
+    &__img {}
+    &__body {
+        max-width: 625px;
+    }
+    &__title {
+        text-align: left;
+    }
+    &__descr {
+        margin-top: 33px;
+        margin-bottom: 33px;
+        font-size: 18px;
+        line-height: 150%;
+    }
+    &__button {}
+}
+
+.geheimnis p {
+    font-size: 18px;
+    max-width: 1010px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.button span.first-span,
+a.button span.first-span {
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.button span.first-span span,
+a.button span.first-span span {
+    text-align: center;
+}
+
+.billet .billet__border-block--item ul li p {
+    &.li {
+        margin-top: 26px;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 6px;
+            height: 6px;
+            left: calc(50% - 3px);
+            top: -15px;
+            border-radius: 50%;
+            background-color: #B29972;
+        }
+    }
+}
+
+.shop-items {
+    padding-bottom: 55px;
+}
+
+.instant {
+    background: #212C4C;
+    padding: 63px 0;
+}
+
 @import "_news";
 @import "_spinner";
 @import "_products";

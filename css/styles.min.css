@@ -8680,6 +8680,7 @@ a {
     -webkit-transition: all .3s ease 0s;
     -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
+    cursor: pointer;
 }
 
 a:hover {
@@ -9007,7 +9008,7 @@ header.header .header__top--menu ul li {
 header.header .header__top--menu ul li a {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 20px;
     display: block;
     margin: 0 10px;
@@ -9068,7 +9069,7 @@ header.header .header__top--soc ul li {
 header.header .header__top--soc ul li a {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 20px;
     display: block;
     margin: 0 5px;
@@ -9103,12 +9104,13 @@ header.header .header__bottom {
 
 header.header .header__bottom h1 {
     font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
+    font-weight: bold;
+    font-size: 36px;
     line-height: 130%;
     position: relative;
     margin-top: 80px;
     display: block;
+    color: #B29972;
 }
 
 header.header .header__bottom h1::after {
@@ -9128,9 +9130,9 @@ header.header .header__bottom a.button {
 header.header .header__bottom p {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 150%;
-    color: #B38A4C;
+    color: #212C4C;
 }
 
 header.header .header__bottom .text-center {
@@ -9202,12 +9204,12 @@ header.header .header__bottom .text-center {
 }
 
 .is_page .billet .billet__border-block {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .is_page .billet .billet__border-block .billet__border-block--item {
-    padding: 70px;
+    padding: 104px 80px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 20px 50px rgba(222, 216, 207, 0.5);
     box-shadow: 0px 20px 50px rgba(222, 216, 207, 0.5);
@@ -9223,13 +9225,14 @@ header.header .header__bottom .text-center {
     margin: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 150%;
 }
 
 .is_page .tabs-section img {
     height: auto;
     width: 100%;
+    max-width: 802px;
     margin: 50px 0;
 }
 
@@ -9248,7 +9251,7 @@ header.header .header__bottom .text-center {
     display: inline-block;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 20px;
     color: #B38A4C;
     padding: 22px 30px;
@@ -9272,7 +9275,7 @@ header.header .header__bottom .text-center {
     display: inline-block;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 20px;
     color: #fff;
     padding: 22px 30px;
@@ -9308,7 +9311,7 @@ header.header .header__bottom .text-center {
 .is_page .tabs-section__items--item .h1 {
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 130%;
     color: #B38A4C;
     text-align: center;
@@ -9388,7 +9391,7 @@ header.header .header__bottom .text-center {
 }
 
 .billet .billet__border-block--item ul li:nth-child(3) {
-    margin: 30px 0;
+    margin: 15px 0;
 }
 
 .billet .billet__border-block--item ul li:nth-child(3) img {
@@ -9398,7 +9401,7 @@ header.header .header__bottom .text-center {
 .billet .billet__border-block--item ul li strong {
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 130%;
     color: #212C4C;
 }
@@ -9406,9 +9409,10 @@ header.header .header__bottom .text-center {
 .billet .billet__border-block--item ul li p {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
     color: #252525;
+    margin: 0;
 }
 
 .geheimnis {
@@ -9500,13 +9504,14 @@ header.header .header__bottom .text-center {
 
 .ausproviet h2 {
     font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
+    font-weight: bold;
+    font-size: 36px;
     line-height: 130%;
     position: relative;
     margin-top: 80px;
     margin-bottom: 20px;
     display: block;
+    text-align: left;
 }
 
 .ausproviet a.button {
@@ -9516,13 +9521,14 @@ header.header .header__bottom .text-center {
 .ausproviet p {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
     color: #252525;
 }
 
 .advantages {
     position: relative;
+    margin-bottom: 100px;
 }
 
 .advantages-item {
@@ -9561,7 +9567,7 @@ header.header .header__bottom .text-center {
 .advantages-item p {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 150%;
     color: #212C4C;
 }
@@ -9590,6 +9596,7 @@ header.header .header__bottom .text-center {
     background: linear-gradient(to right bottom, #8a6a46, #9f7d53, #b49061, #caa46f, #dfb97d, #dfb97d, #dfb97d, #dfb97d, #caa46f, #b49061, #9f7d53, #8a6a46);
     color: #B38A4C;
     width: 100%;
+    border-radius: 11px;
 }
 
 .instant__block div.first div {
@@ -9597,12 +9604,13 @@ header.header .header__bottom .text-center {
     display: inline-block;
     padding: 90px 20px;
     width: 100%;
+    border-radius: 11px;
 }
 
 .instant h2 {
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 130%;
     position: relative;
     display: block;
@@ -9616,7 +9624,7 @@ header.header .header__bottom .text-center {
 .instant p {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 150%;
     color: #fff;
 }
@@ -9671,11 +9679,11 @@ header.header .header__bottom .text-center {
 }
 
 .anwendung .anwendung__item {
-    min-height: 200px;
+    min-height: 215px;
 }
 
 .anwendung .anwendung__item h2 {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 1.2;
     color: #B29972;
     margin-bottom: 20px;
@@ -9684,7 +9692,7 @@ header.header .header__bottom .text-center {
 .anwendung .anwendung__item p {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
     color: #212C4C;
 }
@@ -9708,7 +9716,7 @@ header.header .header__bottom .text-center {
 .video p {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
     color: #212C4C;
 }
@@ -9875,14 +9883,14 @@ footer img {
 footer p {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 150%;
 }
 
 footer a {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 20px;
     display: inline-block;
     margin: 0 10px;
@@ -10143,8 +10151,9 @@ footer a:hover:after {
         padding: 40px;
     }
     .is_page .billet .billet__border-block {
-        padding-left: 40px;
-        padding-right: 40px;
+        /* padding-left: 40px; */
+        /* padding-right: 40px; */
+        padding: 0 40px;
     }
     .is_page .billet .billet__border-block .billet__border-block--item {
         padding: 30px;
@@ -10152,6 +10161,9 @@ footer a:hover:after {
 }
 
 @media (max-width: 414.98px) {
+    br {
+        display: none;
+    }
     header.header .header__bottom {
         background-size: cover;
         background-position: center;
