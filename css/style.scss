@@ -189,7 +189,7 @@ header.header {
 }
 
 .about {
-    padding: 50px 0;
+    padding: 50px 0 0px 0;
     &__title {
         margin-bottom: 28px;
     }
@@ -421,6 +421,113 @@ a.button span.first-span span {
 .instant {
     background: #212C4C;
     padding: 63px 0;
+}
+
+nav ul li a {
+    color: #212C4C;
+    &:hover {
+        color: #B29972;
+    }
+}
+
+.anwendung {
+    .row {
+        justify-content: center;
+    }
+    .col-md-6 {
+        flex: 356px 0 1;
+        max-width: 356px;
+        margin: 0 30px;
+    }
+}
+
+.billet {
+    background: url(../img/Group-right.svg) center right no-repeat;
+}
+
+.mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block!important;
+    top: -100%;
+    left: 0;
+    z-index: 400;
+    padding-top: 130px;
+    transition: all 0.4s ease;
+    &.active {
+        top: 0;
+    }
+}
+
+.social-btn {
+    display: none;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #B38A4C;
+    width: 40px;
+    height: 40px;
+    svg {
+        width: 20px;
+        height: 20px;
+        path {
+            fill: #B38A4C;
+        }
+    }
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header.header .header__top--soc ul li img {
+        width: 40px;
+        height: 40px;
+    }
+    header.header .header__top--soc ul li a {
+        font-size: 20px;
+    }
+    .header__top--soc {
+        width: 200px;
+        height: auto;
+        background-color: #fff;
+        position: absolute;
+        padding: 20px 20px;
+        margin: 0px!important;
+        left: calc(50% - 60px);
+        top: 0;
+        display: none!important;
+        z-index: -100;
+        box-shadow: 0 20px 50px rgba(222, 216, 207, 0.5);
+        transition: all 0.4s ease;
+        &.active {
+            display: block!important;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+                a {
+                    margin: 0!important;
+                }
+            }
+        }
+    }
+}
+
+.phone-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @import "_news";

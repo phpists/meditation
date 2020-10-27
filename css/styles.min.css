@@ -8744,6 +8744,7 @@ a.button span.first-span {
     background: -o-linear-gradient(left top, #8a6a46, #9f7d53, #b49061, #caa46f, #dfb97d, #dfb97d, #dfb97d, #dfb97d, #caa46f, #b49061, #9f7d53, #8a6a46);
     background: linear-gradient(to right bottom, #8a6a46, #9f7d53, #b49061, #caa46f, #dfb97d, #dfb97d, #dfb97d, #dfb97d, #caa46f, #b49061, #9f7d53, #8a6a46);
     color: #B38A4C;
+    transition: all 0.4s ease;
 }
 
 .button span.first-span span,
@@ -8752,26 +8753,31 @@ a.button span.first-span span {
     border-radius: 50px !important;
     display: inline-block;
     padding: 1em 3em;
+    transition: all 0.2s ease;
 }
 
 .button span.first-span:hover,
 a.button span.first-span:hover {
     color: #fff !important;
     text-decoration: none;
-    background: -webkit-gradient(linear, left top, right top, from(#dfb97d), color-stop(#dfb97d), color-stop(#caa46f), color-stop(#b49061), color-stop(#b49061), color-stop(#caa46f), color-stop(#dfb97d), to(#dfb97d)) !important;
-    background: -o-linear-gradient(left, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d) !important;
-    background: linear-gradient(90deg, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d) !important;
+    /* background: -webkit-gradient(linear, left top, right top, from(#dfb97d), color-stop(#dfb97d), color-stop(#caa46f), color-stop(#b49061), color-stop(#b49061), color-stop(#caa46f), color-stop(#dfb97d), to(#dfb97d)) !important; */
+    /* background: -o-linear-gradient(left, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d) !important; */
+    /* background: linear-gradient(90deg, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d) !important; */
+    transition: all 0.4s ease;
 }
 
 .button span.first-span:hover span,
 a.button span.first-span:hover span {
-    background: -webkit-gradient(linear, left top, right top, from(#dfb97d), color-stop(#dfb97d), color-stop(#caa46f), color-stop(#b49061), color-stop(#b49061), color-stop(#caa46f), color-stop(#dfb97d), to(#dfb97d)) !important;
-    background: -o-linear-gradient(left, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d) !important;
-    background: linear-gradient(90deg, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d) !important;
+    /* background: -webkit-gradient(linear, left top, right top, from(#dfb97d), color-stop(#dfb97d), color-stop(#caa46f), color-stop(#b49061), color-stop(#b49061), color-stop(#caa46f), color-stop(#dfb97d), to(#dfb97d)) !important; */
+    /* background: -o-linear-gradient(left, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d) !important; */
+    /* background: linear-gradient(90deg, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d) !important; */
     color: #fff !important;
-    -webkit-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
+    background: transparent;
+    /* -webkit-transition: none !important; */
+    /* -o-transition: none !important; */
+    /* transition: none !important; */
+    background-position: -100px;
+    transition: all 0.4s ease;
 }
 
 .button:focus,
@@ -8817,7 +8823,7 @@ ul.hamburger {
 }
 
 ul.hamburger li {
-    height: 5px;
+    height: 4px;
     background: #B38A4C;
     content: "";
     position: relative;
@@ -8852,6 +8858,8 @@ ul.hamburger li {
 
 ul.hamburger {
     display: block;
+    position: relative;
+    top: 5px;
 }
 
 ul.hamburger li:nth-child(1) {
@@ -8867,7 +8875,7 @@ ul.hamburger li:nth-child(3) {
 }
 
 .hamburger-container {
-    width: 50px;
+    width: 30px;
     margin: 1.2em 1.6em;
     height: 30px;
     cursor: pointer;
@@ -8902,11 +8910,11 @@ ul#menu {
 }
 
 .mobile-menu ul:last-child {
-    display: none;
+    /* display: none; */
 }
 
 .header__top.cloned+nav {
-    display: none !important;
+    /* display: none !important; */
 }
 
 .mobile-menu {
@@ -8975,11 +8983,13 @@ footer {
 header.header {
     background: #F7F6ED;
     min-height: 100%;
-    padding-top: 15px;
+    padding-top: 0px;
 }
 
 header.header .header__top {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+    z-index: 499;
+    position: relative;
 }
 
 header.header .header__top--logo a img {
@@ -9024,7 +9034,7 @@ header.header .header__top--menu ul li a::after {
     content: '';
     width: 0;
     height: 1px;
-    background-color: #212C4C;
+    background-color: #B29972;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -9680,7 +9690,7 @@ header.header .header__bottom .text-center {
 }
 
 .anwendung .anwendung__item {
-    min-height: 215px;
+    min-height: 245px;
 }
 
 .anwendung .anwendung__item h2 {
@@ -9800,7 +9810,7 @@ header.header .header__bottom .text-center {
     background: #F7F6ED;
     padding: 40px 0 20px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .slider h2 {
@@ -9932,7 +9942,7 @@ footer a:hover:after {
 
 /*==========  Desktop First  ==========*/
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1299.98px) {
     .container {
         max-width: 992px;
     }
@@ -10055,7 +10065,8 @@ footer a:hover:after {
         position: relative;
     }
     .header__top.cloned {
-        display: none !important;
+        /* display: none !important; */
+        padding-bottom: 0;
     }
     .is_page .tabs-section__menu-items li,
     .is_page .tabs-section__menu-items li.active {
@@ -10109,7 +10120,7 @@ footer a:hover:after {
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.6);
         z-index: 2;
     }
     .header.header .header__bottom h1,
@@ -10134,7 +10145,7 @@ footer a:hover:after {
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.6);
         z-index: 2;
         margin: 5px 0;
     }
@@ -10177,9 +10188,10 @@ footer a:hover:after {
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.6);
         z-index: 2;
         margin: 15px 0;
+        height: 100%;
     }
 }
 
@@ -10206,7 +10218,7 @@ footer a:hover:after {
     }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1300px) {
     .container {
         max-width: 1230px;
     }
