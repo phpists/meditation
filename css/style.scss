@@ -378,11 +378,13 @@ header.header {
     &__button {}
 }
 
-.geheimnis p {
-    font-size: 18px;
-    max-width: 1010px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+@media (min-width: 1300px) {
+    .geheimnis p {
+        font-size: 18px;
+        max-width: 1010px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
 }
 
 .button span.first-span,
@@ -463,10 +465,15 @@ nav ul li a {
 .social-btn {
     display: none;
     background-color: transparent;
-    border-radius: 50%;
-    border: 1px solid #B38A4C;
-    width: 40px;
-    height: 40px;
+    // border-radius: 50%;
+    // border: 1px solid #B38A4C;
+    // width: 40px;
+    // height: 40px;
+    // background-image: url(../img/phone.svg);
+    color: #B38A4C;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
     svg {
         width: 20px;
         height: 20px;
@@ -485,6 +492,16 @@ nav ul li a {
     header.header .header__top--soc ul li img {
         width: 40px;
         height: 40px;
+    }
+    header.header .header__top--soc ul li {
+        &:first-child {
+            img {
+                border-radius: 50%;
+                border: 1px solid #B38A4C;
+                padding: 3px;
+                padding-top: 6px;
+            }
+        }
     }
     header.header .header__top--soc ul li a {
         font-size: 20px;

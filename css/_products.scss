@@ -1,5 +1,5 @@
 .products {
-    padding: 40px 0 50px 0;
+    padding: 40px 0 40px 0;
     text-align: center;
     &__title {
         margin-bottom: 33px;
@@ -185,8 +185,11 @@ header.header .header__bottom h1.products__title::after {
             max-width: 900px;
             margin: 0 auto;
             p {
-                &:not(:first-child) {
+                &:not(:first-child):not(:last-child) {
                     margin-bottom: 27px;
+                }
+                &:last-child {
+                    margin-bottom: 40px;
                 }
                 &.li {
                     position: relative;
