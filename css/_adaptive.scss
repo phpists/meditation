@@ -108,6 +108,9 @@
 }
 
 @media (max-width: 400px) {
+    .book__button {
+        margin: 10px 0 0;
+    }
     .product-card__link {
         a {
             font-size: 14px;
@@ -115,6 +118,29 @@
     }
     .product-card__title {
         font-size: 20px!important;
+    }
+    header.header .header__bottom p,
+    .ausproviet p,
+    .advantages-item p,
+    .instant p,
+    footer p,
+    .anwendung .anwendung__item p,
+    .button span.first-span,
+    a.button span.first-span,
+    .billet .billet__border-block--item ul li p,
+    .geheimnis p,
+    .video p,
+    .book__descr,
+    .banner__text,
+    .banner__link,
+    .news__date,
+    .news__descr,
+    .link,
+    .single-news__date,
+    .single-news__text p,
+    .is_page .tabs-section p {
+        max-width: 300px;
+        margin: 0 auto;
     }
 }
 
@@ -133,12 +159,12 @@
     .popup__body {
         padding: 15px;
     }
-    .popup__row {
-        display: block;
-        >* {
-            max-width: 100%;
-        }
-    }
+    // .popup__row {
+    //     display: block;
+    //     >* {
+    //         max-width: 100%;
+    //     }
+    // }
     .popup__descr {
         p {
             font-size: 14px;
@@ -235,6 +261,7 @@
     }
     header.header .header__top--soc ul li img {
         width: 28px;
+        height: 28px;
     }
     header.header .header__top--logo a img {
         width: 140px;
@@ -330,7 +357,8 @@
         font-size: 24px;
     }
     .geheimnis p,
-    .video p {
+    .video p,
+    .popup__descr p {
         font-size: 14px;
     }
     .is_page .billet {
@@ -409,7 +437,7 @@
         padding-top: 30px;
     }
     .product-card__inner {
-        padding: 30px 15px;
+        padding: 30px 10px;
         margin: 0 -10px;
     }
     .product-card__item .product-card__title,
@@ -519,7 +547,11 @@
     .news__descr,
     .link,
     .single-news__date,
-    .single-news__text p {
+    .single-news__text p,
+    .is_page .tabs-section p,
+    .geheimnis p,
+    .video p,
+    .popup__descr p {
         font-size: 12px;
     }
     header.header .header__bottom h1,
@@ -555,10 +587,10 @@
         margin-bottom: 20px;
     }
     .hamburger-container {
-        margin-right: 0;
+        margin-right: 0px;
     }
     .header__top.cloned .hamburger-container {
-        margin-right: 0!important;
+        margin-right: 0px!important;
     }
     header.header .header__bottom::after {
         margin: 0;
@@ -581,6 +613,26 @@
     }
     .billet .billet__border-block {
         padding: 0;
+    }
+    .fancybox-slide {
+        padding: 10px 0;
+    }
+    .popup {
+        padding: 10px;
+    }
+    .popup .fancybox-close-small {
+        top: -5px;
+        right: 0px;
+    }
+    .popup__descr {
+        margin-bottom: 10px;
+    }
+    .popup__input {
+        padding: 0px 15px;
+        // border-radius: 15px;
+        &:nth-last-child(2) {
+            padding: 10px 15px;
+        }
     }
 }
 

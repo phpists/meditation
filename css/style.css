@@ -250,6 +250,8 @@ header.header {
   line-height: 150%;
   color: #212C4C;
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .title {
@@ -493,12 +495,13 @@ a.button span.first-span span {
   content: "";
   position: absolute;
   display: block;
-  width: 6px;
-  height: 6px;
-  left: calc(50% - 3px);
+  width: 100px;
+  height: 2px;
+  left: calc(50% - 50px);
   top: -15px;
   border-radius: 50%;
   background-color: #B29972;
+  opacity: 0.5;
 }
 
 .shop-items {
@@ -561,6 +564,10 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
+  font-size: 14px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  border: 2px solid #ffc700;
 }
 
 .social-btn svg {
@@ -586,6 +593,31 @@ nav ul li a:hover {
   }
 }
 
+.product-card__item--big-item {
+  width: 100%;
+}
+
+.news__description {
+  width: 100%;
+}
+
+.shop__item,
+.shop__descr {
+  width: 100%;
+}
+
+.shop__button {
+  left: 0;
+}
+
+.single-news__text {
+  width: 100%;
+}
+
+.advantages-item p {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   header.header .header__top--soc ul li img {
     width: 40px;
@@ -594,8 +626,7 @@ nav ul li a:hover {
   header.header .header__top--soc ul li:first-child img {
     border-radius: 50%;
     border: 1px solid #B38A4C;
-    padding: 3px;
-    padding-top: 6px;
+    padding: 5px;
   }
   header.header .header__top--soc ul li a {
     font-size: 20px;
@@ -1295,12 +1326,13 @@ header.header .header__bottom h1.products__title::after {
   content: "";
   position: absolute;
   display: block;
-  width: 6px;
-  height: 6px;
-  left: calc(50% - 3px);
+  width: 100px;
+  height: 2px;
+  left: calc(50% - 50px);
   top: -15px;
   border-radius: 50%;
   background-color: #B29972;
+  opacity: 0.5;
 }
 
 .tabs-section__menu {
@@ -1812,11 +1844,37 @@ header.header .header__bottom h1.products__title::after {
 }
 
 @media (max-width: 400px) {
+  .book__button {
+    margin: 10px 0 0;
+  }
   .product-card__link a {
     font-size: 14px;
   }
   .product-card__title {
     font-size: 20px !important;
+  }
+  header.header .header__bottom p,
+  .ausproviet p,
+  .advantages-item p,
+  .instant p,
+  footer p,
+  .anwendung .anwendung__item p,
+  .button span.first-span,
+  a.button span.first-span,
+  .billet .billet__border-block--item ul li p,
+  .geheimnis p,
+  .video p,
+  .book__descr,
+  .banner__text,
+  .banner__link,
+  .news__date,
+  .news__descr,
+  .link,
+  .single-news__date,
+  .single-news__text p,
+  .is_page .tabs-section p {
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
 
@@ -1832,12 +1890,6 @@ header.header .header__bottom h1.products__title::after {
 @media (max-width: 500px) {
   .popup__body {
     padding: 15px;
-  }
-  .popup__row {
-    display: block;
-  }
-  .popup__row > * {
-    max-width: 100%;
   }
   .popup__descr p {
     font-size: 14px;
@@ -1942,6 +1994,7 @@ header.header .header__bottom h1.products__title::after {
   }
   header.header .header__top--soc ul li img {
     width: 28px;
+    height: 28px;
   }
   header.header .header__top--logo a img {
     width: 140px;
@@ -2046,7 +2099,8 @@ header.header .header__bottom h1.products__title::after {
     font-size: 24px;
   }
   .geheimnis p,
-  .video p {
+  .video p,
+  .popup__descr p {
     font-size: 14px;
   }
   .is_page .billet {
@@ -2125,7 +2179,7 @@ header.header .header__bottom h1.products__title::after {
     padding-top: 30px;
   }
   .product-card__inner {
-    padding: 30px 15px;
+    padding: 30px 10px;
     margin: 0 -10px;
   }
   .product-card__item .product-card__title,
@@ -2239,7 +2293,11 @@ header.header .header__bottom h1.products__title::after {
   .news__descr,
   .link,
   .single-news__date,
-  .single-news__text p {
+  .single-news__text p,
+  .is_page .tabs-section p,
+  .geheimnis p,
+  .video p,
+  .popup__descr p {
     font-size: 12px;
   }
   header.header .header__bottom h1,
@@ -2275,10 +2333,10 @@ header.header .header__bottom h1.products__title::after {
     margin-bottom: 20px;
   }
   .hamburger-container {
-    margin-right: 0;
+    margin-right: 0px;
   }
   .header__top.cloned .hamburger-container {
-    margin-right: 0 !important;
+    margin-right: 0px !important;
   }
   header.header .header__bottom::after {
     margin: 0;
@@ -2303,6 +2361,25 @@ header.header .header__bottom h1.products__title::after {
   }
   .billet .billet__border-block {
     padding: 0;
+  }
+  .fancybox-slide {
+    padding: 10px 0;
+  }
+  .popup {
+    padding: 10px;
+  }
+  .popup .fancybox-close-small {
+    top: -5px;
+    right: 0px;
+  }
+  .popup__descr {
+    margin-bottom: 10px;
+  }
+  .popup__input {
+    padding: 0px 15px;
+  }
+  .popup__input:nth-last-child(2) {
+    padding: 10px 15px;
   }
 }
 
