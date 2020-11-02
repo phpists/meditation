@@ -400,6 +400,26 @@ a.button span.first-span span {
     text-align: center;
 }
 
+// .news__wrapp {
+// position: absolute;
+// width: 100%;
+// height: 100%;
+// display: block;
+// top: 0;
+// left: 0;
+// }
+// .news__item {
+//     position: relative;
+// }
+.product-card__wrapp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
 .billet .billet__border-block--item ul li p {
     &.li {
         margin-top: 26px;
@@ -408,15 +428,19 @@ a.button span.first-span span {
             content: "";
             position: absolute;
             display: block;
-            width: 100px;
-            height: 2px;
-            left: calc(50% - 50px);
+            width: 50px;
+            height: 1px;
+            left: calc(50% - 25px);
             top: -15px;
             border-radius: 50%;
             background-color: #B29972;
             opacity: 0.5;
         }
     }
+}
+
+.ausproviet h2 {
+    text-align: center;
 }
 
 .shop-items {
@@ -465,6 +489,15 @@ nav ul li a {
     }
 }
 
+.mobile-menu #menu li a {
+    font-size: 20px!important;
+}
+
+.news__link {
+    margin: 10px 0 0 auto!important;
+    margin-top: 10px!important;
+}
+
 .social-btn {
     display: none;
     background-color: transparent;
@@ -473,14 +506,14 @@ nav ul li a {
     // width: 40px;
     // height: 40px;
     // background-image: url(../img/phone.svg);
-    color: #B38A4C;
+    color: #212c4c;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
     font-size: 14px;
-    padding: 5px 20px;
+    padding: 0px 10px;
     border-radius: 25px;
-    border: 2px solid rgb(255, 199, 0);
+    border: 2px solid #B38A4C;
     svg {
         width: 20px;
         height: 20px;

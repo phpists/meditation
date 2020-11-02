@@ -197,9 +197,9 @@ header.header .header__bottom h1.products__title::after {
                         content: "";
                         position: absolute;
                         display: block;
-                        width: 100px;
-                        height: 2px;
-                        left: calc(50% - 50px);
+                        width: 50px;
+                        height: 1px;
+                        left: calc(50% - 25px);
                         top: -15px;
                         border-radius: 50%;
                         background-color: #B29972;
@@ -459,6 +459,7 @@ header.header .header__bottom h1.products__title::after {
                 height: 50px;
                 top: calc(50% - 25px);
                 transition: all 0.2s linear;
+                opacity: 1;
             }
             .shop-items__product-title {
                 color: #B29972;

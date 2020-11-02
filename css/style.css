@@ -486,6 +486,15 @@ a.button span.first-span span {
   text-align: center;
 }
 
+.product-card__wrapp {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
 .billet .billet__border-block--item ul li p.li {
   margin-top: 26px;
   position: relative;
@@ -495,13 +504,17 @@ a.button span.first-span span {
   content: "";
   position: absolute;
   display: block;
-  width: 100px;
-  height: 2px;
-  left: calc(50% - 50px);
+  width: 50px;
+  height: 1px;
+  left: calc(50% - 25px);
   top: -15px;
   border-radius: 50%;
   background-color: #B29972;
   opacity: 0.5;
+}
+
+.ausproviet h2 {
+  text-align: center;
 }
 
 .shop-items {
@@ -557,17 +570,26 @@ nav ul li a:hover {
   top: 0;
 }
 
+.mobile-menu #menu li a {
+  font-size: 20px !important;
+}
+
+.news__link {
+  margin: 10px 0 0 auto !important;
+  margin-top: 10px !important;
+}
+
 .social-btn {
   display: none;
   background-color: transparent;
-  color: #B38A4C;
+  color: #212c4c;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
   font-size: 14px;
-  padding: 5px 20px;
+  padding: 0px 10px;
   border-radius: 25px;
-  border: 2px solid #ffc700;
+  border: 2px solid #B38A4C;
 }
 
 .social-btn svg {
@@ -1326,9 +1348,9 @@ header.header .header__bottom h1.products__title::after {
   content: "";
   position: absolute;
   display: block;
-  width: 100px;
-  height: 2px;
-  left: calc(50% - 50px);
+  width: 50px;
+  height: 1px;
+  left: calc(50% - 25px);
   top: -15px;
   border-radius: 50%;
   background-color: #B29972;
@@ -1648,6 +1670,7 @@ header.header .header__bottom h1.products__title::after {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  opacity: 1;
 }
 
 .shop-items__card:hover .shop-items__product-title {
@@ -1872,9 +1895,15 @@ header.header .header__bottom h1.products__title::after {
   .link,
   .single-news__date,
   .single-news__text p,
-  .is_page .tabs-section p {
+  .is_page .tabs-section p,
+  .about__description {
     max-width: 300px;
     margin: 0 auto;
+  }
+  .anwendung .button,
+  .ausproviet a.button,
+  .video a.button {
+    margin-top: 20px !important;
   }
 }
 
@@ -1959,6 +1988,9 @@ header.header .header__bottom h1.products__title::after {
 }
 
 @media (max-width: 1299.98px) {
+  .shop-items__product-title {
+    font-size: 32px;
+  }
   .product-card__item--big-item .product-card__img {
     -webkit-box-flex: 50%;
         -ms-flex: 50% 0 1;
@@ -2098,9 +2130,13 @@ header.header .header__bottom h1.products__title::after {
   .title {
     font-size: 24px;
   }
+  .book__descr {
+    margin: 20px 0;
+  }
   .geheimnis p,
   .video p,
-  .popup__descr p {
+  .popup__descr p,
+  .book__descr {
     font-size: 14px;
   }
   .is_page .billet {
@@ -2134,10 +2170,6 @@ header.header .header__bottom h1.products__title::after {
   .ausproviet h2 {
     margin-top: 30px;
   }
-  .geheimnis p {
-    font-size: 12px;
-    line-height: 20px;
-  }
   .news {
     padding-top: 40px;
   }
@@ -2157,15 +2189,15 @@ header.header .header__bottom h1.products__title::after {
   .shop-items {
     padding-bottom: 40px;
   }
-  .products__descr p {
-    font-size: 12px !important;
-  }
   .about {
     padding-top: 40px;
   }
 }
 
 @media (max-width: 768px) {
+  .products__descr p {
+    font-size: 12px !important;
+  }
   .callback__inner {
     padding: 0;
   }
@@ -2297,7 +2329,8 @@ header.header .header__bottom h1.products__title::after {
   .is_page .tabs-section p,
   .geheimnis p,
   .video p,
-  .popup__descr p {
+  .popup__descr p,
+  footer a {
     font-size: 12px;
   }
   header.header .header__bottom h1,
@@ -2314,6 +2347,11 @@ header.header .header__bottom h1.products__title::after {
   .button span.first-span,
   a.button span.first-span {
     font-size: 14px;
+  }
+  .geheimnis p,
+  .book__descr {
+    font-size: 12px;
+    line-height: 20px;
   }
   .geheimnis img,
   .leichtigkeit .leichtigkeit__item p,

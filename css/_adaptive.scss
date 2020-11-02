@@ -138,9 +138,15 @@
     .link,
     .single-news__date,
     .single-news__text p,
-    .is_page .tabs-section p {
+    .is_page .tabs-section p,
+    .about__description {
         max-width: 300px;
         margin: 0 auto;
+    }
+    .anwendung .button,
+    .ausproviet a.button,
+    .video a.button {
+        margin-top: 20px!important;
     }
 }
 
@@ -228,6 +234,9 @@
 }
 
 @media (max-width: 1299.98px) {
+    .shop-items__product-title {
+        font-size: 32px;
+    }
     .product-card__item--big-item {
         .product-card__img {
             flex: 50% 0 1;
@@ -356,9 +365,13 @@
     .title {
         font-size: 24px;
     }
+    .book__descr {
+        margin: 20px 0
+    }
     .geheimnis p,
     .video p,
-    .popup__descr p {
+    .popup__descr p,
+    .book__descr {
         font-size: 14px;
     }
     .is_page .billet {
@@ -392,10 +405,6 @@
     .ausproviet h2 {
         margin-top: 30px;
     }
-    .geheimnis p {
-        font-size: 12px;
-        line-height: 20px;
-    }
     .news {
         padding-top: 40px;
     }
@@ -415,15 +424,15 @@
     .shop-items {
         padding-bottom: 40px;
     }
-    .products__descr p {
-        font-size: 12px!important;
-    }
     .about {
         padding-top: 40px;
     }
 }
 
 @media (max-width: 768px) {
+    .products__descr p {
+        font-size: 12px!important;
+    }
     .callback__inner {
         padding: 0;
     }
@@ -551,7 +560,8 @@
     .is_page .tabs-section p,
     .geheimnis p,
     .video p,
-    .popup__descr p {
+    .popup__descr p,
+    footer a {
         font-size: 12px;
     }
     header.header .header__bottom h1,
@@ -568,6 +578,11 @@
     .button span.first-span,
     a.button span.first-span {
         font-size: 14px;
+    }
+    .geheimnis p,
+    .book__descr {
+        font-size: 12px;
+        line-height: 20px;
     }
     .geheimnis img,
     .leichtigkeit .leichtigkeit__item p,
