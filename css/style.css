@@ -2192,6 +2192,9 @@ header.header .header__bottom h1.products__title::after {
   .about {
     padding-top: 40px;
   }
+  .about__description {
+    font-size: 14px !important;
+  }
 }
 
 @media (max-width: 768px) {

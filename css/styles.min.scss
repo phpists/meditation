@@ -9268,6 +9268,9 @@ header.header .header__bottom .text-center {
     font-size: 18px;
     line-height: 150%;
     max-width: 1000px;
+    @media (max-width: 1300px) {
+        max-width: 850px;
+    }
 }
 
 .is_page .tabs-section img {

@@ -9308,6 +9308,12 @@ header.header .header__bottom .text-center {
   max-width: 1000px;
 }
 
+@media (max-width: 1300px) {
+  .is_page .tabs-section p {
+    max-width: 850px;
+  }
+}
+
 .is_page .tabs-section img {
   height: auto;
   width: 100%;
