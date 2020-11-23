@@ -612,6 +612,86 @@ nav ul li a {
     justify-content: space-between;
 }
 
+.thank-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212C4C;
+    padding: 25px;
+    border-radius: 20px;
+    min-width: 250px;
+    z-index: 100;
+    // opacity: 0;
+    display: none;
+    &__inner {
+        position: relative;
+        height: 100%;
+        min-height: 300px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        background-clip: padding-box;
+        border: solid 1px transparent;
+        border-radius: 15px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            margin: -2px;
+            /* !importanté */
+            border-radius: inherit;
+            /* !importanté */
+            background: linear-gradient(90deg, #dfb97d, #dfb97d, #caa46f, #b49061, #b49061, #caa46f, #dfb97d, #dfb97d)
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+        overflow: hidden;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__head {
+        z-index: 2;
+        position: relative;
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 30px;
+        color: #B29972;
+    }
+    &__body {
+        z-index: 2;
+        position: relative;
+        font-size: 18px;
+        max-width: 350px;
+        text-align: center;
+    }
+}
+
 @import "_news";
 @import "_spinner";
 @import "_products";
