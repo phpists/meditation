@@ -306,7 +306,7 @@ header.header .header__bottom h1.products__title::after {
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         padding: 0;
         padding-top: 45px;
