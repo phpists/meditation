@@ -28,12 +28,13 @@
     <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png" />
     <meta name="theme-color" content="##9f004b" />
     <meta property="og:image" content="img/logo.png" />
-    <link rel="stylesheet" href="css/grt-youtube-popup.css">
-    <link rel="stylesheet" href="css/styles.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link href="./css/fancybox.css" rel="stylesheet">
     <link href="./css/slick.css" rel="stylesheet">
     <link href="./css/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/grt-youtube-popup.css">
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="is_page">
@@ -227,7 +228,7 @@
                             <p class="banner__text">
                                 Du bist schon Kunde und möchtest bestellen?
                             </p>
-                            <a class="banner__link">
+                            <a id="open-article-popup" class="banner__link">
                                   dann klicke hier
                             </a>
                         </div>
@@ -264,6 +265,40 @@
             <p class="thank-modal__body">
                 Lorem ipsum dolor sit amet. (Форма успешно отправлена)
             </p>
+        </div>
+    </div>
+    <div style="display: none;" class="popup popup__article">
+        <div class="popup__inner">
+            <div class="popup__text">
+                <div class="popup__descr">
+                    <p>
+                        Hast du eine Hautthematik oder möchtest gerne erfahren, was du wirklich effektiv gegen Falten, Trockenheit, Cellulite oder Narben tun kannst? Du leidest an Haarausfall und möchtest wissen, wie du bei geschädigtem, sprödem Haar das beste Ergebnis erreichen
+                        kannst, und dies auf Dauer? Auch deine Fragen zur Erhaltung gesunder Haut und Haare z.B. bei Sonneneinstrahlung oder in den kalten Wintermonaten beantworten wir dir gerne und geben dir Tipps zur Zahnpflege.
+                    </p>
+                    <p>
+                        Relight Delight Wirkstoffkosmetik ist aussergewöhnlich und eine neue, intensive Erfahrung für Ihre Haut. Es ist daher wichtig, sich vor der Nutzung unserer Produkte Zeit zu nehmen, damit wir dir wertvolle Informationen und Tipps mit auf den Weg geben
+                        können. Dafür stellen wir dir ein hochqualifiziertes Team aus top geschulten Haut, Haar und Beauty Coaches zur Verfügung, die dir mit ihrem fachkundigen Wissen rund um Haut & Haare zur Seite stehen.
+                    </p>
+                    <p class="popup__head-text">
+                        Ja, ich wünsche mir eine Beratung!
+                    </p>
+                </div>
+                <form action="/" class="popup__form">
+                    <div class="popup__row">
+                        <label for="vorname" class="popup__input"><input name="vorname" id="vorname" type="text" placeholder="Vorname"></label>
+                        <label for="mail" class="popup__input"><input name="mail" id="mail" type="email" placeholder="E-Mail-Adresse"></label>
+                    </div>
+                    <div class="popup__row">
+                        <label for="nachname" class="popup__input"><input name="nachname" id="nachname" type="text" placeholder="Nachname"></label>
+                        <label for="phone" class="popup__input"><input name="phone" id="phone" type="tel" placeholder="Telefonnummer"></label>
+                    </div>
+                    <label for="comment" class="popup__input"><textarea name="comment" id="comment" cols="30" rows="4" placeholder="Was wünsche ich mir?"></textarea></label>
+                    <div class="popup__button-wrap">
+                        <button type="submit" class="button border-gradient popup__button"><span class="first-span"><span>ABSENDEN</span></span></button>
+
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <script src="js/plugins.min.js"></script>

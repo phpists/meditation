@@ -194,6 +194,10 @@
     .callback__inner {
         padding: 10px;
     }
+    .is_page .shop-page__term li {
+        flex: 100% 0 1;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -234,6 +238,23 @@
 }
 
 @media (max-width: 1299.98px) {
+    .is_page .shop-page__line {
+        max-width: 800px;
+        margin-bottom: 0;
+    }
+    .is_page .shop-page__descr {
+        font-size: 14px;
+    }
+    .is_page .shop-page__descr {
+        max-width: 800px;
+        margin-bottom: 0;
+    }
+    .is_page .shop-page__item {
+        padding: 25px 25px 20px;
+    }
+    .is_page .shop-page__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
     .shop-items__product-title {
         font-size: 32px;
     }
@@ -258,7 +279,7 @@
         margin-bottom: 20px!important;
     }
     .container {
-        max-width: 992px;
+        // max-width: 992px;
     }
     header.header .header__top--soc ul li a,
     header.header .header__top--menu ul li a,
@@ -432,7 +453,28 @@
     }
 }
 
+@media (max-width: 991px) {
+    .is_page .shop-page__line {
+        max-width: 90%;
+    }
+}
+
 @media (max-width: 768px) {
+    .is_page .shop-page__descr,
+    .is_page .shop-page__term dt,
+    .is_page .shop-page__term li {
+        font-size: 12px;
+    }
+    .is_page .shop-page__name {
+        font-size: 20px;
+    }
+    .is_page .shop-page__item-img img {
+        width: 140px;
+        height: 140px;
+    }
+    .is_page .shop-page__item-img {
+        margin-right: 20px;
+    }
     .thank-modal__head {
         font-size: 18px;
         margin-bottom: 5px;
@@ -677,6 +719,20 @@
     .news__img {
         align-self: center;
     }
+    .is_page .shop-page__line {
+        height: auto;
+        padding: 0 10px;
+        p {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .is_page .tabs-section .shop-page__img img {
+        height: 200px;
+    }
+    .is_page .shop-page {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -707,5 +763,15 @@
     .header__top--soc {
         width: 300px!important;
         left: calc(50% - 150px);
+    }
+    .is_page .shop-page__item {
+        padding: 20px 0;
+    }
+    .is_page .shop-page__item-img img {
+        margin: 0 auto!important;
+        display: block;
+    }
+    .shop-page__top {
+        flex-direction: column;
     }
 }
