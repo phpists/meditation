@@ -314,7 +314,7 @@ header.header {
             border: none;
             font-size: 14px;
             line-height: 16px;
-            color: #B29972;
+            color: black;
         }
     }
     label[for="comment"] {
@@ -337,7 +337,7 @@ header.header {
 .container {}
 
 .contact {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 150%;
     &__title {
         font-weight: bold;
@@ -845,6 +845,42 @@ nav ul li a {
 .border-gradient {}
 
 .first-span {}
+
+.header__bottom-block {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.is_page .header__bottom--no-fon .header__text-img img {
+    width: 100%;
+    max-height: 600px;
+}
+
+.header__text {
+    text-align: center;
+}
+
+header.header .header__bottom h1.header__text-title {
+    margin-top: 20px;
+}
+
+.billet.billet-no-bold .billet__border-block--item ul li strong {
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.text-600 {
+    max-width: 600px;
+    @media (max-width: 768px) {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header.header .header__bottom h1::after {
+        display: none;
+    }
+}
 
 @import "_news";
 @import "_spinner";
