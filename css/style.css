@@ -1242,6 +1242,7 @@ nav ul li a:hover {
 }
 
 .header__bottom-block {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
