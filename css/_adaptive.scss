@@ -238,6 +238,10 @@
 }
 
 @media (max-width: 1299.98px) {
+    .shop-page__card {
+        flex: calc(33.333% - 30px) 0 1;
+        max-width: calc(33.333% - 30px);
+    }
     .is_page .shop-page__line {
         max-width: 800px;
         margin-bottom: 0;
@@ -457,13 +461,44 @@
     .is_page .shop-page__line {
         max-width: 90%;
     }
+    .shop-page__card {
+        flex: calc(50% - 30px) 0 1;
+        max-width: calc(50% - 30px);
+    }
+    .gray-block__title {
+        font-size: 30px!important;
+    }
+    .gray-block .left {
+        max-width: 250px;
+        flex: 250px 0 1;
+    }
+    .gray-block__img img {
+        object-fit: contain;
+    }
+    .gray-block .right {
+        max-width: calc(100% - 270px);
+        flex: calc(100% - 270px) 0 1;
+    }
 }
 
 @media (max-width: 768px) {
+    .is_page .tabs-section .shop-page__line-img img {
+        margin: 0!important;
+    }
+    .is_page .shop-page .shop-page__img-text {
+        font-size: 24px;
+    }
+    .is_page .tabs-section .shop-page__img img {
+        margin: 0!important;
+        height: 200px;
+    }
     .is_page .shop-page__descr,
     .is_page .shop-page__term dt,
     .is_page .shop-page__term li {
         font-size: 12px;
+    }
+    .is_page .tabs-section .gray-block__img img {
+        margin: 0!important;
     }
     .is_page .shop-page__name {
         font-size: 20px;
@@ -708,9 +743,45 @@
             padding: 10px 15px;
         }
     }
+    .gray-block__link {
+        font-size: 12px;
+    }
+    .gray-block__img img {
+        height: auto!important;
+    }
+    .product-modal .callback__body {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 600px) {
+    .gray-block .container {
+        flex-direction: column;
+    }
+    .shop-page__card {
+        flex: 100% 0 1;
+        margin: 10px 0;
+        max-width: 100%;
+    }
+    .is_page .shop-page .shop-page__img-text {
+        font-size: 20px;
+    }
+    .is_page .shop-page__img-line {
+        margin: 25px 0;
+    }
+    .gray-block {
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+    .gray-block .left {
+        flex: 100% 0 1;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .gray-block .right {
+        flex: 100% 0 1;
+        max-width: 100%;
+    }
     .news__item {
         flex-direction: column;
         max-height: 100%;
@@ -765,7 +836,7 @@
         left: calc(50% - 150px);
     }
     .is_page .shop-page__item {
-        padding: 20px 0;
+        padding: 20px 15px;
     }
     .is_page .shop-page__item-img img {
         margin: 0 auto!important;
