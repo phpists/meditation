@@ -16,7 +16,7 @@
             font-size: 18px;
             line-height: 141%;
             margin-bottom: 20px;
-            text-align: left;
+            text-align: justify;
         }
         .leichtigkeit__bottom {
             display: flex;
@@ -188,7 +188,7 @@
 
 @media (max-width: 768px) {
     .leichtigkeit .leichtigkeit__item.leichtigkeit__item--main {
-        padding: 10px;
+        padding: 20px;
     }
     .leichtigkeit__bottom {
         img {
@@ -207,7 +207,7 @@
         font-size: 18px;
     }
     .leichtigkeit .leichtigkeit__item .leichtigkeit__p {
-        font-size: 12px;
+        // font-size: 12px;
     }
     .cosmos {
         margin-top: 0;

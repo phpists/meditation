@@ -43,23 +43,33 @@
             <div class="header__top">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-3 col-md-3 col-6">
+                        <div class="col-lg-2 col-md-3 col-6">
                             <div class="header__top--logo">
                                 <a href="/">
                                     <img src="img/logo.svg" alt="logo" />
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-2 col-6 order-md-12 order-lg-2 phone-cont">
+                        <div class="col-lg-7 col-md-2 col-6 order-md-12 order-lg-2 phone-cont">
                             <div class="header__top--menu d-none d-lg-block">
                                 <nav>
                                     <ul>
-                                        <li><a href="./index.html">Home</a></li>
-                                        <li><a href="./instant-charge.html">Instant Charge</a></li>
-                                        <li><a href="./instant.html">Meditation</a></li>
-                                        <li><a href="./news.html">News</a></li>
-                                        <li><a href="./products.html">Shop</a></li>
-                                        <li><a href="./contact.html">Uber mich</a></li>
+                                        <li><a class="menu__link menu__link--active" href="{{ url('/') }}">Start</a></li>
+                                        <li><a class="menu__link" href="{{ url('instant-change') }}">Instant Change</a></li>
+                                        <li><a class="menu__link" href="{{ url('meditation') }}">Meditation</a></li>
+                                        <li><a class="menu__link" href="{{ url('news') }}">News</a></li>
+                                        <li><a class="menu__link" href="{{ url('shop') }}">Empfehlungen</a>
+                                            <div class="submenu">
+                                                <div class="submenu__item"><a href="/shop/gesundheit-schnheit" class="submenu__link">Gesundheit, Schönheit</a></div>
+                                                <div class="submenu__item"><a href="/shop/nahrungsergnzungsmittel-superfood" class="submenu__link">Nahrungsergänzungsmittel, Superfood</a></div>
+                                                <div class="submenu__item"><a href="/shop/wasser" class="submenu__link">Wasser</a></div>
+                                                <div class="submenu__item"><a href="/shop/haushalt-kche-kochen" class="submenu__link">Haushalt, Küche & Kochen</a></div>
+                                                <div class="submenu__item"><a href="/shop/strahlenschutz" class="submenu__link">Strahlenschutz</a></div>
+                                                <div class="submenu__item"><a href="/shop/bcher" class="submenu__link">Bücher</a></div>
+                                                <div class="submenu__item"><a href="/shop/wohlbefinden" class="submenu__link">Wohlbefinden</a></div>
+                                            </div>
+                                        </li>
+                                        <li><a class="menu__link" href="{{ url('contact') }}">Über mich</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -97,7 +107,7 @@
                             <h1>
                                 Du kannst alles verandern habe<br /> Mut und mache den ersten<br /> Schritt in deine gluckliche Welt
                             </h1>
-                            <a href="#" class="button border-gradient"><span class="first-span"><span>Wie will ich es haben?</span></span></a>
+                            <!-- <a href="#" class="button border-gradient"><span class="first-span"><span>Wie will ich es haben?</span></span></a> -->
 
 
                             <!-- <p>
@@ -219,12 +229,14 @@
                 <div class="row ">
                     <div class="col-12 ">
                         <img src="img/logo-footer.svg " alt="logo ">
-                        <p>Ursi Tschamper<br> Lifestyle-Beraterin<br> Instant Charge Certified Proffesional</p>
+                        <p>Ursi Tschamper<br> Lifestyle-Beraterin<br> Instant Charge Certified Professional</p>
                         <a href="# ">Impressum</a>
                     </div>
                 </div>
             </div>
         </footer>
+        <span class="line__bottom"></span>
+
     </div>
     <div style="display: none; " class="popup ">
         <div class="popup__inner ">

@@ -3476,6 +3476,19 @@ header.header .header__top--menu ul li:hover .submenu {
     display: block;
 }
 
+header.header .header__top--menu ul li a.menu__link.menu__link--active {
+    &::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: #b38a4c;
+        bottom: 20px;
+        left: calc(50% - 3px);
+    }
+}
+
 header.header .header__top--menu ul li a.menu__link {
     display: flex;
     height: 80px;
@@ -3503,4 +3516,4 @@ header.header .header__top--menu ul li a.submenu__link {
     line-height: normal;
 }
 
-@import "./new_main.scss";
+@import "_new_main.scss";

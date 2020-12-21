@@ -3505,6 +3505,17 @@ header.header .header__top--menu ul li:hover .submenu {
   display: block;
 }
 
+header.header .header__top--menu ul li a.menu__link.menu__link--active::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #b38a4c;
+  bottom: 20px;
+  left: calc(50% - 3px);
+}
+
 header.header .header__top--menu ul li a.menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3558,7 +3569,7 @@ header.header .header__top--menu ul li a.submenu__link {
   font-size: 18px;
   line-height: 141%;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: justify;
 }
 
 .leichtigkeit .leichtigkeit__item .leichtigkeit__bottom {
@@ -3729,7 +3740,7 @@ header.header .header__top--menu ul li a.submenu__link {
 
 @media (max-width: 768px) {
   .leichtigkeit .leichtigkeit__item.leichtigkeit__item--main {
-    padding: 10px;
+    padding: 20px;
   }
   .leichtigkeit__bottom img {
     max-width: 120px;
@@ -3744,9 +3755,6 @@ header.header .header__top--menu ul li a.submenu__link {
   .leichtigkeit .leichtigkeit__item .leichtigkeit__title,
   .cosmos__descr {
     font-size: 18px;
-  }
-  .leichtigkeit .leichtigkeit__item .leichtigkeit__p {
-    font-size: 12px;
   }
   .cosmos {
     margin-top: 0;
