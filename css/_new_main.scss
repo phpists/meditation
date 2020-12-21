@@ -7,7 +7,7 @@
             font-weight: bold;
             font-size: 24px;
             line-height: 141%;
-            color: #B29972;
+            color: #b29972;
             margin-bottom: 15px;
         }
         .leichtigkeit__descr {}
@@ -26,6 +26,7 @@
         .leichtigkeit__signature {
             margin-bottom: 0;
             margin-right: 24px;
+            font-weight: normal;
         }
     }
 }
@@ -48,7 +49,7 @@
     justify-content: center;
     border-radius: 20px;
     background: url(../img/new_main/cosmos.png) center/cover no-repeat;
-    color: #F7F6ED;
+    color: #f7f6ed;
     text-align: center;
     &__inner {}
     &__title {
@@ -158,11 +159,22 @@
         padding: 0 10px;
         margin-bottom: 20px;
         list-style: none;
+        a {
+            display: block;
+            overflow: hidden;
+        }
+        img {}
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
     }
     &__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: all 1s ease;
     }
 }
 
@@ -187,6 +199,9 @@
 }
 
 @media (max-width: 768px) {
+    .leichtigkeit__descr {
+        margin-top: 15px;
+    }
     .leichtigkeit .leichtigkeit__item.leichtigkeit__item--main {
         padding: 20px;
     }
@@ -228,6 +243,7 @@
     }
     .main-bottom__images {
         flex-wrap: wrap;
+        padding: 10px;
     }
     .main-bottom__item {
         flex: 33.333% 0 1;

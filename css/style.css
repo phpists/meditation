@@ -2263,7 +2263,7 @@ header.header .header__bottom h1.products__title::after {
 
 .banner__link {
   text-decoration: underline;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 144.5%;
   cursor: pointer;
   color: #b38a4c !important;
@@ -2799,6 +2799,80 @@ header.header .header__bottom h1.products__title::after {
   .mobile {
     display: inline;
   }
+}
+
+.is_page .shop-page__descr {
+  font-size: 16px;
+}
+
+.shop-items__product-title {
+  font-size: 30px;
+}
+
+header.header .header__top--soc ul li a,
+header.header .header__top--menu ul li a,
+footer a {
+  font-size: 16px;
+}
+
+header.header .header__bottom h1,
+.billet .billet__border-block--item ul li strong,
+.ausproviet h2,
+.instant h2,
+.is_page .tabs-section__items--item .h1,
+.title,
+.product-card__item--big-item .product-card__title {
+  font-size: 28px;
+}
+
+.news__title {
+  font-size: 28px;
+}
+
+.button span.first-span,
+a.button span.first-span,
+.billet .billet__border-block--item ul li p,
+.is_page .tabs-section p,
+.banner__text,
+.news__descr,
+.link,
+.product-card__item--big-item .product-card__descr {
+  font-size: 16px;
+}
+
+header.header .header__bottom p,
+.ausproviet p,
+.advantages-item p,
+.instant p,
+footer p,
+.anwendung .anwendung__item p {
+  font-size: 16px;
+}
+
+.leichtigkeit .leichtigkeit__item p,
+.video h2,
+.slider h2,
+.anwendung .anwendung__item h2 {
+  font-size: 28px;
+}
+
+.single-news__date {
+  font-size: 16px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.geheimnis p,
+.video p,
+.popup__descr p,
+.book__descr {
+  font-size: 16px;
+}
+
+.single-news__date {
+  font-size: 16px;
 }
 
 @media (max-width: 1299.98px) {
@@ -3560,7 +3634,7 @@ header.header .header__top--menu ul li a.submenu__link {
   font-weight: bold;
   font-size: 24px;
   line-height: 141%;
-  color: #B29972;
+  color: #b29972;
   margin-bottom: 15px;
 }
 
@@ -3587,6 +3661,7 @@ header.header .header__top--menu ul li a.submenu__link {
 .leichtigkeit .leichtigkeit__item .leichtigkeit__signature {
   margin-bottom: 0;
   margin-right: 24px;
+  font-weight: normal;
 }
 
 .cosmos {
@@ -3603,7 +3678,7 @@ header.header .header__top--menu ul li a.submenu__link {
           justify-content: center;
   border-radius: 20px;
   background: url(../img/new_main/cosmos.png) center/cover no-repeat;
-  color: #F7F6ED;
+  color: #f7f6ed;
   text-align: center;
 }
 
@@ -3711,11 +3786,25 @@ header.header .header__top--menu ul li a.submenu__link {
   list-style: none;
 }
 
+.main-bottom__item a {
+  display: block;
+  overflow: hidden;
+}
+
+.main-bottom__item:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .main-bottom__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 @media (max-width: 1300px) {
@@ -3739,6 +3828,9 @@ header.header .header__top--menu ul li a.submenu__link {
 }
 
 @media (max-width: 768px) {
+  .leichtigkeit__descr {
+    margin-top: 15px;
+  }
   .leichtigkeit .leichtigkeit__item.leichtigkeit__item--main {
     padding: 20px;
   }
@@ -3778,6 +3870,7 @@ header.header .header__top--menu ul li a.submenu__link {
   .main-bottom__images {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 10px;
   }
   .main-bottom__item {
     -webkit-box-flex: 33.333%;
