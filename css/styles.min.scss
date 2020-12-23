@@ -9228,7 +9228,7 @@ header.header .header__bottom p {
 }
 
 header.header .header__bottom .text-center {
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
 }
 
 .is_page .h1 {
@@ -9281,15 +9281,13 @@ header.header .header__bottom .text-center {
 }
 
 .is_page .billet {
-    background-image: url("../img/Group.png");
-    background-repeat: no-repeat;
+    background: url(../img/Group-right.svg) center right no-repeat;
     min-height: 100%;
     width: 100%;
     position: relative;
-    background-position: center left;
     background-size: 170px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 75px;
+    margin-top: 75px;
     padding: 0;
 }
 
@@ -9302,12 +9300,12 @@ header.header .header__bottom .text-center {
 }
 
 .is_page .billet .billet__border-block {
-    padding-left: 75px;
-    padding-right: 75px;
+    // padding-left: 75px;
+    // padding-right: 75px;
 }
 
 .is_page .billet .billet__border-block .billet__border-block--item {
-    padding: 104px 80px;
+    padding: 75px 80px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 20px 50px rgba(222, 216, 207, 0.5);
     box-shadow: 0px 20px 50px rgba(222, 216, 207, 0.5);
@@ -9555,12 +9553,20 @@ header.header .header__bottom .text-center {
     margin-bottom: 40px;
 }
 
-.leichtigkeit {}
+.leichtigkeit {
+    padding-top: 75px;
+}
 
 @media (max-width: 1300px) {
+    .billet .billet__border-block {
+        padding: 20px 0;
+    }
+    .is_page .billet .billet__border-block .billet__border-block--item {
+        padding: 50px 30px;
+    }
     .leichtigkeit,
     .video {
-        padding-top: 60px;
+        padding-top: 50px;
     }
     .video {
         /* padding-bottom: ; */
@@ -9642,14 +9648,14 @@ header.header .header__bottom .text-center {
     font-size: 36px;
     line-height: 130%;
     position: relative;
-    margin-top: 80px;
+    margin-top: 75px;
     margin-bottom: 20px;
     display: block;
     text-align: left;
 }
 
 .ausproviet a.button {
-    margin: 30px 0 45px;
+    margin: 20px 0 75px;
 }
 
 .ausproviet p {
@@ -9662,7 +9668,8 @@ header.header .header__bottom .text-center {
 
 .advantages {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
+    padding-top: 75px;
 }
 
 .advantages-item {
@@ -9769,7 +9776,7 @@ header.header .header__bottom .text-center {
     position: relative;
     text-align: center;
     padding: 0!important;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .instant__item .container {
@@ -9841,7 +9848,7 @@ header.header .header__bottom .text-center {
 }
 
 .anwendung .anwendung__item {
-    min-height: 245px;
+    min-height: 225px;
 }
 
 .anwendung .anwendung__item h2 {
@@ -9860,13 +9867,14 @@ header.header .header__bottom .text-center {
 }
 
 .anwendung .button {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    // margin-top: 40px;
+    // margin-bottom: 40px;
 }
 
 .video {
     text-align: center;
-    padding-bottom: 40px;
+    padding-top: 75px;
+    padding-bottom: 90px;
 }
 
 .video h2 {
@@ -9903,8 +9911,8 @@ header.header .header__bottom .text-center {
 }
 
 .video ul li img {
-    width: 600px;
-    height: 350px;
+    width: 800px;
+    height: 450px;
     max-width: 100% !important;
     max-height: 100% !important;
     margin: 0 auto;
@@ -9917,8 +9925,8 @@ header.header .header__bottom .text-center {
 
 .video ul li.video-item {
     position: relative;
-    width: 600px;
-    height: 350px;
+    width: 800px;
+    height: 450px;
     max-width: 100% !important;
     max-height: 100% !important;
     margin: 0 auto;
@@ -9960,7 +9968,7 @@ header.header .header__bottom .text-center {
     position: relative;
     z-index: 3;
     background: #f7f6ed;
-    padding: 40px 0 20px;
+    padding: 75px 0 20px;
     text-align: center;
     margin-top: 0px;
 }
@@ -9969,7 +9977,7 @@ header.header .header__bottom .text-center {
     font-size: 28px;
     line-height: 1.2;
     color: #b29972;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .slider a.right-link {
@@ -10043,7 +10051,7 @@ span.line__bottom {
 
 footer {
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
     position: relative;
 }
 
