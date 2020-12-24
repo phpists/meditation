@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Asea</title>
+    <meta name="description" content="" />
+
+    <!-- <meta name="viewport" content="width=device-width" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="manifest" href="img/manifest.json" />
+    <meta name="msapplication-TileColor" content="##9f004b" />
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png" />
+    <meta name="theme-color" content="##9f004b" />
+    <meta property="og:image" content="img/logo.png" />
+    <link href="./css/fancybox.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="is_page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-3 col-6">
+                            <div class="header__top--logo">
+                                <a href="/">
+                                    <img src="img/logo.svg" alt="logo" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-2 col-6 order-md-12 order-lg-2 phone-cont">
+                            <div class="header__top--menu d-none d-lg-block">
+                                <nav>
+                                    <ul>
+                                        <li><a class="menu__link menu__link--active" href="{{ url('/') }}">Start</a></li>
+                                        <li><a class="menu__link" href="{{ url('instant-change') }}">Instant Change</a></li>
+                                        <li><a class="menu__link" href="{{ url('meditation') }}">Meditation</a></li>
+                                        <li><a class="menu__link" href="{{ url('news') }}">News</a></li>
+                                        <li><a class="menu__link" href="{{ url('shop') }}">Empfehlungen</a>
+                                            <div class="submenu">
+                                                <div class="submenu__item"><a href="/shop/gesundheit-schnheit" class="submenu__link">Gesundheit, Schönheit</a></div>
+                                                <div class="submenu__item"><a href="/shop/nahrungsergnzungsmittel-superfood" class="submenu__link">Nahrungsergänzungsmittel, Superfood</a></div>
+                                                <div class="submenu__item"><a href="/shop/wasser" class="submenu__link">Wasser</a></div>
+                                                <div class="submenu__item"><a href="/shop/haushalt-kche-kochen" class="submenu__link">Haushalt, Küche & Kochen</a></div>
+                                                <div class="submenu__item"><a href="/shop/strahlenschutz" class="submenu__link">Strahlenschutz</a></div>
+                                                <div class="submenu__item"><a href="/shop/bcher" class="submenu__link">Bücher</a></div>
+                                                <div class="submenu__item"><a href="/shop/wohlbefinden" class="submenu__link">Wohlbefinden</a></div>
+                                            </div>
+                                        </li>
+                                        <li><a class="menu__link" href="{{ url('contact') }}">Über mich</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="hamburger-container d-block d-lg-none">
+                                <ul class="hamburger">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-7 col-12 order-md-1 order-lg-3">
+                            <div class="header__top--soc">
+                                <ul>
+                                    <li>
+                                        <a href="tel:+4179228436" class="tel"><img src="./img/phone-2.svg" class="mobile" alt="">+41 79 22 84 36</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-tooltip="Всплывающая подсказка" class="fb"><img src="img/1.svg" alt="fb" /> <span>facebookName</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-tooltip="Всплывающая подсказка" class="mail"><img src="img/3.svg" alt="mail" /><span>foxijump@yahoo.com</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__scroll"></div>
+            <div class="header__bottom  header__bottom-single-news header__bottom-news">
+                <div class="container">
+                    <a href="./news.html" class="back link">
+                        <img src="./img/arrow-back.svg" alt=""> Zurück
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="preview">
+                <div class="preview__img"><img src="./img/asea/asea-bg.png" alt=""></div>
+                <div class="preview__breadcrumbs">
+                    <div class="container">
+                        <div class="breadcrumbs">
+                            <div class="breadcrumbs__icon"><img src="./img/asea/home.svg" alt=""></div>
+                            <div class="breadcrumbs__item"><a href="./index.html"> Startseite</a></div>
+                            <div class="breadcrumbs__item"><a href="./products.html"> Empfehlungen</a></div>
+                            <div class="breadcrumbs__item"><a href="./shop.html">  Gesundheit / Schönheit</a></div>
+                            <div class="breadcrumbs__item"><a href="./asea.html">Asea</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="product-about padding">
+                <div class="container">
+                    <h1 class="big-title product-about__title">Gesundheit — unser höchstes Gut</h1>
+                    <div class="product-about__description description">
+                        <p>Ist dir bewusst, dass gesunde Zellen für die Gesundheit elementar wichtig sind?
+                        </p>
+                        <p> Alle unsere Gesundheitsprobleme sind auf Zellen zurückzuführen, die nicht in der Lage sind, ein gesundes REDOX-Potenzial aufrechtzuerhalten. In unserer industrialisierten Welt führen unsere Herausforderungen zu chronischen Ungleichgewichten
+                            in der Zellgesundheit, die chronischen oxidativen Stress verursachen, den der Körper nicht überwinden kann. Alterung, schlechte Ernährung, psychischer Stress, schlechte Hydratation und mangelnde Bewegung sind die Voraussetzungen
+                            für dieses Ungleichgewicht, das das Tempo des Alterns (und auch der Krankheit) vorantreibt.
+                        </p>
+                        <p> Möchtest du dir und deiner Gesundheit etwas Gutes tun? Dich in sämtlichen Bereichen des Wohlbefindens (Schlaf, Vitalität, Beweglichkeit etc.) unterstützen und deine Gesundheit behalten oder optimieren?
+                        </p>
+                    </div>
+                    <div class="tipp">
+                        <div class="shop-page__img-line shop-page__img-line--white">
+                            <div class="shop-page__line-inner">
+                                <div class="shop-page__line-img"><img src="./img/wooman-icon.png" alt=""></div>
+                                <p><span>Mein Tipp:</span></p>
+                                <p>ASEA ist ein einzigartiges Produkt für die Zellerneuerung, welches die Selbstheilung aktiviert und somit das allgemeine Wohlbefinden in allen Bereichen unseres Systems enorm steigert. Die Produkte sind vollkommen natürlich
+                                    und werden schonend hergestellt.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <ul class="main-bottom__images">
+                            <li class="main-bottom__item">
+                                <a href="/"><img src="./img/asea/img-1.png" alt="" class="main-bottom__img"></a>
+                            </li>
+                            <li class="main-bottom__item">
+                                <a href="/"><img src="./img/asea/img-2.png" alt="" class="main-bottom__img"></a>
+                            </li>
+                            <li class="main-bottom__item">
+                                <a href="/"><img src="./img/asea/img-3.png" alt="" class="main-bottom__img"></a>
+                            </li>
+                            <li class="main-bottom__item">
+                                <a href="/"><img src="./img/asea/img-4.png" alt="" class="main-bottom__img"></a>
+                            </li>
+                            <li class="main-bottom__item">
+                                <a href="/"><img src="./img/asea/img-5.png" alt="" class="main-bottom__img"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="brown-block padding">
+                <div class="container">
+                    <div class="brown-block__inner">
+                        <h2 class="big-title brown-block__title">
+                            Was ist ASEA?
+                        </h2>
+                        <div class="brown-block__decription description">
+                            <p>ASEA ist das erste und einzige Unternehmen der Welt, das erfolgreich Redox-Signalmoleküle ausserhalb des Körpers herstellt und stabilisiert.
+                            </p>
+                            <p> Was sind Redox-Signalmoleküle (RSM)?</p>
+                            <ul class="brown-block__list">
+                                <li class="brown-block__list-item">Kleine Moleküle, im Innern der Zellen produzierte biologische Botenstoffe, die den Schutz, die Reparatur und die Selbstzerstörung (Apoptose) oder die Erneuerung von Zellen auslösen. Kurz gesagt sind es Moleküle, die alle
+                                    Zellvorgänge steuern und damit auch für jegliche Selbstheilung verantwortlich sind.</li>
+                                <li class="brown-block__list-item">Das allererste Reduktions-Oxidations-Signalmolekül (RED-OX) wurde 1998 im Herzgewebe identifiziert (Nobelpreis für Medizin) und seitdem wurden tausende von Studien auf diesem Gebiet veröffentlicht, die die entscheidende
+                                    Rolle dieses Moleküls in der Behandlung und Prävention von Krankheiten, für Langlebigkeit und Vitalität feststellen und untersuchen.</li>
+                                <li class="brown-block__list-item">Leider nimmt unser Mitochondrienbestand und demnach auch die RSM mit zunehmendem Alter ab. Er wird auch durch die Einwirkung von Giftstoffen, Stress und Krankheiten reduziert. Ohne ausreichende Mengen dieser Moleküle in
+                                    unserem Körper regenerieren sich unsere Zellen nicht bedarfsgerecht und wir werden anfällig für Krankheiten, Beschwerden und die Auswirkungen des Alterns. </li>
+                                <li class="brown-block__list-item">Prominente Wissenschaftler wie Dr. James Watson (Entdecker der Doppelhelix der DNA) haben festgestellt, dass dieser epidemische Rückgang der RSM der Hauptgrund dafür ist, dass wir eine Zunahme der Krankheiten (autoimmune,
+                                    neurodegenerative, chronische) wie nie zuvor verzeichnen.</li>
+                                <li class="brown-block__list-item">Um dies zu bekämpfen, hat ein Forschungsteam der Firma ASEA ca. 20 Jahre und Millionen von Dollars dazu aufgewendet, einen Weg zu finden, diese lebenswichtigen Moleküle zu reproduzieren und zu stabilisieren, sodass der
+                                    Mensch den natürlichen Heilungsprozess seines Körpers ergänzen und anregen kann. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq padding">
+                <div class="container">
+                    <div class="faq__inner">
+                        <div class="faq__item">
+                            <h3 class="faq__title title">Gibt es Studien, die dieses Fachgebiet erforschen? </h3>
+                            <div class="faq__descr description">
+                                <p>Ja, die Entdeckung des allerersten Redox-Signalmoleküls wurde 1998 mit dem Nobelpreis für Medizin ausgezeichnet. Seitdem haben fast 19'000 Studien die lebenswichtige Rolle dieses Moleküls und die therapeutischen Möglichkeiten
+                                    untersucht.
+                            </div>
+                            </p>
+                        </div>
+                        <div class="faq__item">
+                            <h3 class="faq__title title">Warum brauche ich es, wenn ich nicht krank bin?</h3>
+                            <div class="faq__descr description">
+                                <p>Die meisten Krankheiten verlaufen über einen Zeitraum von 8 bis 10 Jahren unbemerkt. Vorbeugen ist besser als Heilen.
+                                </p>
+                                <p> Jede Zelle in Ihrem Körper ist auf diese wichtigen biologischen Botenstoffe angewiesen, um sich zu schützen und zu reparieren. Wenn Sie also Redox einnehmen, beginnt Ihr Körper einen Reinigungsprozess (Entgiftung) und sendet
+                                    Signale für eine neue Zellregeneration.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <h3 class="faq__title title">Ist es genau wie bei Produkt X oder Y? </h3>
+                            <div class="faq__descr description">Es unterscheidet sich von den meisten Gesundheitsprodukten dadurch, dass dieses Molekül bereits vom Körper hergestellt wird. Es ist körpereigen und Sie müssen sich nicht fragen, ob es funktioniert oder ob es aufgenommen wird,
+                                denn es entspricht genau dem, was unser Körper bereits für die Selbstheilung verwendet!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards gradient padding">
+                <div class="container">
+                    <div class="card">
+                        <div class="card__img"><img src="./img/asea/card-1.png" alt=""></div>
+                        <div class="card__text">
+                            <h3 class="title card__title">ASEA Drink</h3>
+                            <div class="card__descr description">
+                                <p>ASEA ist das erste und weltweit einzige Nahrungsergänzungsmittel, das aus Billionen von perfekt ausgewogenen, stabilisierten Redox-Signal-Molekülen besteht. Dies sind die gleichen Moleküle, die auch in den Zellen des menschlichen
+                                    Körpers vorkommen. Die regelmässige Einnahme von ASEA erhöht die Anzahl der Redox Signal Moleküle im Körper und stärkt sowie schützt unser Zellen.
+                                </p>
+                            </div>
+                            <ul class="card__list description">
+                                <li class="card__list-item">die erste und einzige Quelle für ausgewogene, stabilisierte Redox-Signalmoleküle ausserhalb des Körpers</li>
+                                <li class="card__list-item">verstärkt die angeborene Fähigkeit des Körpers sich selbst zu regenerieren</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img"><img src="./img/asea/card-2.png" alt=""></div>
+                        <div class="card__text">
+                            <h3 class="title card__title">ASEA Renu 28 - Revitalisierendes Redox-Gel</h3>
+                            <div class="card__descr description">
+                                <p>RENU 28, das revitalisierende Redox-Gel enthält die Kraft der Redox-Signaltechnologie in einem leichten, sehr gut verträglichen Gel. Das Gel unterstützt die gesunde Zellerneuerung, es sorgt für eine glatte ausgeglichene
+                                    Hauttextur und revitalisiert die Gesundheit der Haut. Durch die Redox-Signalmoleküle werden die Zellen entschlackt und gereinigt und erhalten so wieder ihre jugendliche Funktionalität.
+                                </p>
+                            </div>
+                            <ul class="card__list description">
+                                <li class="card__list-item">enthält die bahnbrechenden Redox-Signalmoleküle von ASEA </li>
+                                <li class="card__list-item">Hautpflegeproduk für den ganzen Körper, für jedermann und jeden Hauttyp geeignet</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-card">
+                        <div class="border-card__img"><img src="./img/asea/card-full.png" alt=""></div>
+                        <div class="border-card__text">
+                            <h3 class="border-card__title title">Hast du Fragen zu ASEA?</h3>
+                            <div class="border-card__descr description">
+                                <p>Ich bin Beraterin und Vertriebspartnerin bei ASEA.</p>
+                                <p>Möchtest du gerne Produkte bestellen oder dich gar als <br> Vertriebs-Partner registrieren? <a href="" class="content-link">Dann kontaktiere mich.</a></p>
+                                <p>Ich freue mich auf deine Kontaktaufnahme. </p>
+                                <p>Hier geht es direkt zu meiner ASEA Seite.</p>
+                            </div>
+                            <div class="border-card__button">
+                                <a href="#" class="button border-gradient"><span class="first-span"><span>klicke hier</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/logo-footer.svg" alt="logo">
+                        <p>Ursi Tschamper<br> Lifestyle-Beraterin<br> Instant Charge Certified Professional</p>
+                        <a href="#">Impressum</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <span class="line__bottom"></span>
+
+    </div>
+    <div style="display: none;" class="popup">
+        <div class="popup__inner">
+            <div class="popup__img"><img src="./img/popup_img.jpg" alt=""></div>
+            <div class="popup__body">
+                <div class="popup__descr">
+                    <p>
+                        Mit der <span class="some-color">Instant Change</span> Methode helfe ich dir, dass deine Wünsche erfüllt werden.
+                    </p>
+                    <p>
+                        Lass dich überraschen, du wirst staunen wie leicht und vor allem wie schnell das funktioniert.
+                    </p>
+                    <p>
+                        Alles ist möglich! Wie würdest du es gerne haben?
+                    </p>
+                    <p>
+                        Verrate mir deine Wünsche!
+                    </p>
+                    <p>
+                        Ich zeige dir wie leicht sie in Erfüllung gehen können.
+                    </p>
+                </div>
+                <form action="/" class="popup__form">
+                    <div class="popup__row">
+                        <label for="name" class="popup__input"><input name="name" id="name" type="text" placeholder="Name"></label>
+                        <label for="mail" class="popup__input"><input name="mail" id="mail" type="text" placeholder="E-Mail"></label>
+                    </div>
+                    <label for="phone" class="popup__input"><input name="phone" id="phone" type="text"  placeholder="Telefon"></label>
+                    <label for="comment" class="popup__input"><textarea name="comment" id="comment" cols="30" rows="4" placeholder="Was wünsche ich mir?"></textarea></label>
+                    <div class="popup__button-wrap">
+                        <button type="submit" class="button border-gradient popup__button"><span class="first-span"><span>ABSENDEN</span></span></button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="thank-modal">
+        <div class="thank-modal__inner">
+            <div class="thank-modal__img"><img src="./img/popup_img.jpg" alt=""></div>
+            <div class="thank-modal__head">
+                Danke!
+            </div>
+            <p class="thank-modal__body">
+                Lorem ipsum dolor sit amet. (Форма успешно отправлена)
+            </p>
+        </div>
+    </div>
+    <script src="js/plugins.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
