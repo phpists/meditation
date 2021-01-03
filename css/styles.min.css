@@ -9060,8 +9060,8 @@ header.header .header__top {
 }
 
 header.header .header__top--logo a img {
-  width: 210px;
-  height: 60px;
+  width: 240px;
+  height: 100px;
 }
 
 header.header .header__top--menu {
@@ -9189,11 +9189,10 @@ header.header .header__bottom {
 
 header.header .header__bottom h1 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 36px;
   line-height: 130%;
   position: relative;
-  margin-top: 80px;
   display: block;
   color: #b29972;
 }
@@ -9317,9 +9316,11 @@ header.header .header__bottom p {
 }
 
 .is_page .tabs-section img {
-  height: auto;
+  height: 375px;
   width: 100%;
-  max-width: 802px;
+  max-width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 50px 0;
 }
 
@@ -9438,9 +9439,11 @@ header.header .header__bottom p {
 .billet .billet__border-first-block span.first span {
   background: #fff;
   position: absolute;
-  min-height: calc(100% - 2.5px);
-  width: calc(100% - 2.5px);
-  margin: 1.5px;
+  top: 1px;
+  left: 1px;
+  min-height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  margin: 0px;
 }
 
 .billet .billet__border-block {
@@ -9477,7 +9480,7 @@ header.header .header__bottom p {
 }
 
 .billet .billet__border-block--item ul li {
-  text-align: center;
+  text-align: justify;
 }
 
 .billet .billet__border-block--item ul li:first-child img {
@@ -9580,7 +9583,7 @@ header.header .header__bottom p {
   position: absolute;
   min-height: 100%;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .leichtigkeit .leichtigkeit__first-item span.first::after {
@@ -9596,10 +9599,13 @@ header.header .header__bottom p {
 .leichtigkeit .leichtigkeit__first-item span.first span {
   background: #fff;
   position: absolute;
-  min-height: calc(100% - 2.5px);
-  width: calc(100% - 2.5px);
-  margin: 1.5px;
-  border-radius: 15px;
+  left: 1px;
+  top: 1px;
+  display: block;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  /* margin: 1px; */
+  border-radius: 10px;
 }
 
 .leichtigkeit .leichtigkeit__item {
@@ -9763,7 +9769,7 @@ header.header .header__bottom p {
   margin-top: 0px;
 }
 
-.instant__item .container {
+.instant__item {
   padding-top: 32px;
   padding-bottom: 32px;
   background: url(../img/book-bg.png) center/cover no-repeat;
@@ -9783,15 +9789,15 @@ header.header .header__bottom p {
 
 .image-translate {
   -webkit-transform: translateY(115px);
-      -ms-transform: translateY(115px);
-          transform: translateY(115px);
+  -ms-transform: translateY(115px);
+  transform: translateY(115px);
 }
 
 @media (max-width: 768px) {
   .image-translate {
     -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -9986,13 +9992,31 @@ header.header .header__bottom p {
 
 .slider .slider__item img {
   max-width: 100%;
-  max-height: 240px;
+  max-height: 215px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 auto;
   border-radius: 20px;
   position: relative;
+}
+
+@media (max-width: 1300px) {
+  .slider .slider__item img {
+    max-height: 170px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider .slider__item img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider .slider__item img {
+    max-height: 160px;
+  }
 }
 
 .slider .slider__item::after {
@@ -10235,7 +10259,7 @@ footer a:hover:after {
     padding: 0 40px;
   }
   .is_page .billet .billet__border-block .billet__border-block--item {
-    padding: 30px;
+    padding: 30px 15px;
   }
 }
 

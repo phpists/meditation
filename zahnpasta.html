@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Zahnpasta</title>
+    <meta name="description" content="" />
+
+    <!-- <meta name="viewport" content="width=device-width" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="manifest" href="img/manifest.json" />
+    <meta name="msapplication-TileColor" content="##9f004b" />
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png" />
+    <meta name="theme-color" content="##9f004b" />
+    <meta property="og:image" content="img/logo.png" />
+    <link href="./css/fancybox.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="is_page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-3 col-6">
+                            <div class="header__top--logo">
+                                <a href="/">
+                                    <img src="img/logo.svg" alt="logo" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-2 col-6 order-md-12 order-lg-2 phone-cont">
+                            <div class="header__top--menu d-none d-lg-block">
+                                <nav>
+                                    <ul>
+                                        <li><a class="menu__link menu__link--active" href="{{ url('/') }}">Start</a></li>
+                                        <li><a class="menu__link" href="{{ url('instant-change') }}">Instant Change</a></li>
+                                        <li><a class="menu__link" href="{{ url('meditation') }}">Meditation</a></li>
+                                        <li><a class="menu__link" href="{{ url('news') }}">News</a></li>
+                                        <li><a class="menu__link" href="{{ url('shop') }}">Empfehlungen</a>
+                                            <div class="submenu">
+                                                <div class="submenu__item"><a href="/shop/gesundheit-schnheit" class="submenu__link">Gesundheit, Schönheit</a></div>
+                                                <div class="submenu__item"><a href="/shop/nahrungsergnzungsmittel-superfood" class="submenu__link">Nahrungsergänzungsmittel, Superfood</a></div>
+                                                <div class="submenu__item"><a href="/shop/wasser" class="submenu__link">Wasser</a></div>
+                                                <div class="submenu__item"><a href="/shop/haushalt-kche-kochen" class="submenu__link">Haushalt, Küche & Kochen</a></div>
+                                                <div class="submenu__item"><a href="/shop/strahlenschutz" class="submenu__link">Strahlenschutz</a></div>
+                                                <div class="submenu__item"><a href="/shop/bcher" class="submenu__link">Bücher</a></div>
+                                                <div class="submenu__item"><a href="/shop/wohlbefinden" class="submenu__link">Wohlbefinden</a></div>
+                                            </div>
+                                        </li>
+                                        <li><a class="menu__link" href="{{ url('contact') }}">Über mich</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="hamburger-container d-block d-lg-none">
+                                <ul class="hamburger">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-7 col-12 order-md-1 order-lg-3">
+                            <div class="header__top--soc">
+                                <ul>
+                                    <li>
+                                        <a href="tel:+4179228436" class="tel"><img src="./img/phone-2.svg" class="mobile" alt="">+41 79 22 84 36</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-tooltip="Всплывающая подсказка" class="fb"><img src="img/1.svg" alt="fb" /> <span>facebookName</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-tooltip="Всплывающая подсказка" class="mail"><img src="img/3.svg" alt="mail" /><span>foxijump@yahoo.com</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__scroll"></div>
+            <div class="header__bottom  header__bottom-single-news header__bottom-news">
+                <div class="container">
+                    <a href="./news.html" class="back link">
+                        <img src="./img/arrow-back.svg" alt=""> Zurück
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="preview">
+                <div class="preview__img"><img src="./img/Zahnpasta/bg.png" alt=""></div>
+                <div class="preview__breadcrumbs">
+                    <div class="container">
+                        <div class="breadcrumbs breadcrumbs--white">
+                            <div class="breadcrumbs__icon"><img src="./img/asea/home-white.svg" alt=""></div>
+                            <div class="breadcrumbs__item"><a href="./index.html"> Startseite</a></div>
+                            <div class="breadcrumbs__item"><a href="./products.html"> Empfehlungen</a></div>
+                            <div class="breadcrumbs__item"><a href="./shop.html">  Gesundheit / Schönheit</a></div>
+                            <div class="breadcrumbs__item"><a href="./asea.html">Zahnpasta</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="product-about padding text-justify">
+                <div class="container">
+                    <h1 class="big-title product-about__title">Zu Hause erfunden in der Fabrik abgefüllt.</h1>
+
+                    <div class="product-about__description description text-justify">
+                        <p> Mit 100% natürlichen Zutaten und 40% Xylit!
+                        </p>
+                        <p> Frischer Pfefferminz- Geschmack, ohne bitteren Tenside.
+                        </p>
+                        <p> Weisse Farbe ohne Pigmentmittel wie Titandioxid.
+                        </p>
+                        <p> Mit 40% Xylit Anteil ein natürlicher und wirksamer Schutz gegen Karies. Xylit (Birkenzucker) Erhöht den pH-Wert und verhindert somit ein saures Milieu im Mund, dadurch können Karies verursachende Bakterien sich nur schwer vermehren.
+                            Xylit unterstützt die Remineralisierung, fördert den Speichelfluss und hemmt Mundgeruch. Zahlreiche Studien weltweit belegen statistisch signifikant das kariespräventive Potenzial von Xylit in Zahnpasten.
+                        </p>
+                        <p> Die 100% natürliche Zahncreme von Freya Care.
+                        </p>
+                    </div>
+
+                    <div class="product-adw">
+                        <div class="product-adw__img"><img src="./img/Zahnpasta/img-1.png" alt=""></div>
+                        <ul class="product-adw__list description">
+                            <li class="list-item product-adw__list-item">ohne Fluorid</li>
+                            <li class="list-item product-adw__list-item">Kosher</li>
+                            <li class="list-item product-adw__list-item">ohne Titandioxid</li>
+                            <li class="list-item product-adw__list-item">dank 40% Xylit 80% weniger Karies</li>
+                            <li class="list-item product-adw__list-item">ohne Tenside</li>
+                            <li class="list-item product-adw__list-item">gegen Zahnfleischentzündungen</li>
+                            <li class="list-item product-adw__list-item">ohne Glycerin</li>
+                            <li class="list-item product-adw__list-item">gegen Mundgeruch</li>
+                            <li class="list-item product-adw__list-item">Vegan</li>
+                            <li class="list-item product-adw__list-item">gegen Zahnstein</li>
+                            <li class="list-item product-adw__list-item">Halal</li>
+                            <li class="list-item product-adw__list-item">Weisse Zähne dank Diatomeenerde</li>
+                        </ul>
+                    </div>
+
+                    <div class="tipp">
+                        <div class="shop-page__img-line shop-page__img-line--white mb-0">
+                            <div class="shop-page__line-inner">
+                                <div class="shop-page__line-img"><img src="./img/wooman-icon.png" alt=""></div>
+                                <p><span>Mein Tipp:</span></p>
+                                <p>die natürliche Zahnpflege ohne Giftstoffe. Die Basis für gute Gesundheit!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="gradient">
+                <div class="padding promo">
+                    <div class="container">
+                        <h2 class="promo__title title">Gebe bei deiner Bestellung einfach den Gutschein Code <button class="promo__text-button">Ursi</button> ein, dann erhältst du automatisch 20% auf den Total Betrag.</h2>
+                        <div class="promo__button"> <a href="#" class="button border-gradient"><span class="first-span"><span>klicke hier</span></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-block padding">
+                    <div class="container">
+                        <h2 class="big-title">Mit nur 7 natürlichen Inhaltsstoffen die wohl einfachste Rezeptur überhaupt.</h2>
+                        <div class="description text-justify">
+                            <p>
+                                Die Aufgabe einer Zahncreme besteht darin die Zähne durch Putzkörper zu reinigen, durch aktive Wirkstoffe gegen Karies sowie Entzündungen am Zahnfleich vorzubeugen und durch Geschmack ein Gefühl von frische zu erzeugen.
+                            </p>
+                            <p>
+                                Um diese 4 wichtigsten Eigenschaften einer Zahncreme miteinander zu verbinden, sie haltbar, stabil und optisch schön weiss zu halten, werden meist Fluoride in Kombination von Chemikalien wie Desinfektionsmittel, Emulgatoren, Feuchtehaltemittel, künstliche
+                                Süssstoffe, Titandioxid als Weissmacher, Tenside sowie künstlich konstruierte Nano Meterialien verwendet.
+                            </p>
+                            <p>
+                                Freya Care ist es gelungen eine Zahncreme herzustellen welche all diese Eigenschaften mit nur 7 Inhaltsstoffen inklusive Wasser vereint.
+                            </p>
+                        </div>
+                        <div class="description-block__row pt-2">
+                            <div class="description-block__img"><img src="./img/Zahnpasta/img-2.png" alt=""></div>
+                            <div class="description-block__text description">
+                                <ul class="description-block__list">
+                                    <li class="description-block__list-item list-item">Mit 40% Xylit ein erwiesener Schutz gegen Karies. In einem sauren Milieu erfreuen sich Karies verursachende Bakterien und vermehren sich prächtig. Xylit erhöht den pH-Wert und hat zur Folge dass sich Karies verursachende
+                                        Bakterien nicht mehr ernähren und vermehren können. Sie hungern regelrecht aus.</li>
+                                    <li class="description-block__list-item list-item">Magnesiumcarbonat verleiht der Zahncreme die schöne weisse Farbe und dient als sanfte Putzkörper.</li>
+                                    <li class="description-block__list-item list-item">Diatomeenerde sorgt durch die extrem poröse Eigenschaft Verfärbungen zu absorbieren und hellt die Zähne auf.</li>
+                                    <li class="description-block__list-item list-item">Salbei-Öl beugt gegen Entzündungen vor.</li>
+                                    <li class="description-block__list-item list-item">Pfefferminz-Öl sorgt für frischen Atem.</li>
+                                    <li class="description-block__list-item list-item">Xanthan dient als Bindemittel.</li>
+                                </ul>
+                                <p class="description-block__p">
+                                    100% natürlich ohne Kompromisse. Alle Inhaltsstoffe sind natürlichen Ursprungs und als Nahrungsergänzungsmittel zugelassen.
+                                </p>
+                                <p>
+                                    Sie erhalten die natürliche Mundflora.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/logo-footer.svg" alt="logo">
+                        <p>Ursi Tschamper<br> Lifestyle-Beraterin<br> Instant Charge Certified Professional</p>
+                        <a href="#">Impressum</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <span class="line__bottom"></span>
+    </div>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/grt-youtube-popup.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
